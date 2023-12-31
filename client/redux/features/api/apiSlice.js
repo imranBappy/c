@@ -7,7 +7,7 @@ export const apiSlice = createApi({
   baseQuery: fetchBaseQuery({
     // baseUrl:
     //   process.env.NODE_ENV === "production" ? baseUrl : "http://localhost:5000",
-    baseUrl: "http://13.244.105.126:5000",
+    baseUrl: "https://c-6sjz.vercel.app",
 
     prepareHeaders: async (headers, { getState, endpoint }) => {
       let token = getState();
