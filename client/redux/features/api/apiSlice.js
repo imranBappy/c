@@ -6,7 +6,11 @@ export const apiSlice = createApi({
   reducerPath: "api",
   baseQuery: fetchBaseQuery({
     // baseUrl:
+<<<<<<< HEAD
     // process.env.NODE_ENV === "production" ? baseUrl : "http://localhost:5000",
+=======
+    //   process.env.NODE_ENV === "production" ? baseUrl : "http://localhost:5000",
+>>>>>>> 64025c27ecdae3117a98fcf2f0878e4931d0dcbf
     baseUrl: "https://c-6sjz.vercel.app",
 
     prepareHeaders: async (headers, { getState, endpoint }) => {
@@ -40,7 +44,10 @@ export const apiSlice = createApi({
     "Click",
     "Wholesaler",
     "Order",
+<<<<<<< HEAD
     "Settings",
+=======
+>>>>>>> 64025c27ecdae3117a98fcf2f0878e4931d0dcbf
   ],
   endpoints: (builder) => ({}),
 });

@@ -10,11 +10,19 @@ import { useSelector } from "react-redux";
 import useLogout from "@/hooks/useLogout";
 import useAuthCheck from "@/hooks/useAuthCheck";
 import Script from "next/script";
+<<<<<<< HEAD
 import { useGetSettingsQuery } from "@/redux/features/settings/settingsApi";
 
 const Header = () => {
   const [showNev2, setShowNev2] = useState(false);
   const { data, isLoading: isLoadingSettings } = useGetSettingsQuery();
+=======
+import { LanguageSwitcher } from "../lang/LangSwitcher";
+
+const Header = () => {
+  const [showNev2, setShowNev2] = useState(false);
+
+>>>>>>> 64025c27ecdae3117a98fcf2f0878e4931d0dcbf
   useAuthCheck();
   const auth = useSelector((state) => state.auth);
   const logout = useLogout();
@@ -139,7 +147,11 @@ const Header = () => {
               <div className="w-1/4">
                 <Link href="/">
                   <Image
+<<<<<<< HEAD
                     src={data?.logo?.url || "/images/logo.svg"}
+=======
+                    src="/images/logo.svg"
+>>>>>>> 64025c27ecdae3117a98fcf2f0878e4931d0dcbf
                     width={163}
                     height={72}
                     alt="Picture of the author"
@@ -285,7 +297,11 @@ const Header = () => {
           <div>
             <Link href="/">
               <Image
+<<<<<<< HEAD
                 src={data?.logo?.url || "/images/logo.svg"}
+=======
+                src="/images/logo.svg"
+>>>>>>> 64025c27ecdae3117a98fcf2f0878e4931d0dcbf
                 width={136}
                 height={40}
                 alt="Picture of the author"

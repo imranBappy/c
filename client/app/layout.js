@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 "use client";
 
 import "./globals.css";
@@ -56,6 +57,20 @@ export default function RootLayout({ children }) {
       n.LiveChatWidget = n.LiveChatWidget || e;
     })(window, document, [].slice);
   }, []);
+=======
+import "./globals.css";
+import Footer from "@/components/Footer";
+
+import { Providers } from "@/redux/store/provider";
+export const metadata = {
+  title:
+    "Wholesale joblot pallets and clearance sales from all over the world | Merkandi B2B",
+  description:
+    "Merkandi is a tool for international wholesale traders, with many surplus and bankrupt stock offers, liquidation stocks and wholesale clearance deals.",
+};
+
+export default function RootLayout({ children }) {
+>>>>>>> 64025c27ecdae3117a98fcf2f0878e4931d0dcbf
   return (
     <html lang="en">
       <body className="bg-[#f7f7f7]">
@@ -64,6 +79,7 @@ export default function RootLayout({ children }) {
           {children}
           <Footer />
         </Providers>
+<<<<<<< HEAD
 
         <Script src="/assets/scripts/lang-config.js" />
         {/* <Script src="/assets/scripts/chat-config.js" strategy="lazyOnload" /> */}
@@ -81,6 +97,8 @@ export default function RootLayout({ children }) {
             LiveChat
           </a>
         </noscript>
+=======
+>>>>>>> 64025c27ecdae3117a98fcf2f0878e4931d0dcbf
       </body>
     </html>
   );

@@ -197,6 +197,7 @@ function AdminBer() {
           defaultIcon={<BiSolidTachometer fontSize={25} />}
           items={[
             { title: "General Settings", link: "/admin/settings" },
+<<<<<<< HEAD
             // { title: "Site settings", link: "/admin/settings/site" },
             // { title: "Header Setting", link: "/admin/settings/header" },
             // { title: "Footer Setting", link: "/admin/settings/footer" },
@@ -213,6 +214,24 @@ function AdminBer() {
             //   title: "Social Media Link",
             //   link: "/admin/settings/social-link",
             // },
+=======
+            { title: "Site settings", link: "/admin/settings/site" },
+            { title: "Header Setting", link: "/admin/settings/header" },
+            { title: "Footer Setting", link: "/admin/settings/footer" },
+            { title: "Logo Setting", link: "/admin/settings/logo" },
+            { title: "Body & Header", link: "/admin/settings/body" },
+            { title: "SEO Setting", link: "/admin/settings/seo" },
+            {
+              title: "Social Media Login",
+              link: "/admin/settings/social-login",
+            },
+            {
+              title: "Social Media Link",
+              link: "/admin/settings/social-link",
+            },
+            { title: "Google eCaptcha", link: "/admin/settings/ecaptcha" },
+            { title: "VAT", link: "/admin/settings/vat" },
+>>>>>>> 64025c27ecdae3117a98fcf2f0878e4931d0dcbf
           ]}
         />
         <div className="bg-white border-b">

@@ -6,11 +6,17 @@ import { useSelector } from "react-redux";
 import useLogout from "@/hooks/useLogout";
 import NevBer from "../NevBer";
 import useAuthCheck from "@/hooks/useAuthCheck";
+<<<<<<< HEAD
 import { useGetSettingsQuery } from "@/redux/features/settings/settingsApi";
 
 const BasicHeader = () => {
   const [showNev2, setShowNev2] = useState(false);
   const { data } = useGetSettingsQuery();
+=======
+
+const BasicHeader = () => {
+  const [showNev2, setShowNev2] = useState(false);
+>>>>>>> 64025c27ecdae3117a98fcf2f0878e4931d0dcbf
 
   useAuthCheck();
   const auth = useSelector((state) => state.auth);
@@ -24,7 +30,11 @@ const BasicHeader = () => {
             <div className="w-1/4">
               <Link href="/">
                 <Image
+<<<<<<< HEAD
                   src={data?.logo?.url || "/images/logo.svg"}
+=======
+                  src="/images/logo.svg"
+>>>>>>> 64025c27ecdae3117a98fcf2f0878e4931d0dcbf
                   width={163}
                   height={72}
                   alt="Picture of the author"
@@ -111,7 +121,11 @@ const BasicHeader = () => {
           <div>
             <Link href="/">
               <Image
+<<<<<<< HEAD
                 src={data?.logo?.url || "/images/logo.svg"}
+=======
+                src="/images/logo.svg"
+>>>>>>> 64025c27ecdae3117a98fcf2f0878e4931d0dcbf
                 width={136}
                 height={40}
                 alt="Picture of the author"

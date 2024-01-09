@@ -48,10 +48,14 @@ const LanguageSwitcher = (props) => {
           {currentLanguage === ld.name ||
           (currentLanguage === "auto" &&
             languageConfig.defaultLanguage === ld) ? (
+<<<<<<< HEAD
             <span
               key={`l_s_${ld}`}
               className="mx-3 text-blue-900 font-semibold"
             >
+=======
+            <span key={`l_s_${ld}`} className="mx-3 text-orange-300">
+>>>>>>> 64025c27ecdae3117a98fcf2f0878e4931d0dcbf
               {ld.title}
             </span>
           ) : (

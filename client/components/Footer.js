@@ -1,14 +1,22 @@
+<<<<<<< HEAD
 "use client";
 
+=======
+>>>>>>> 64025c27ecdae3117a98fcf2f0878e4931d0dcbf
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import MobileBottomMenu from "./Menu/MobileBottomMenu";
+<<<<<<< HEAD
 import { useGetSettingsQuery } from "@/redux/features/settings/settingsApi";
 
 const Footer = () => {
   const { data, isLoading } = useGetSettingsQuery();
 
+=======
+
+const Footer = () => {
+>>>>>>> 64025c27ecdae3117a98fcf2f0878e4931d0dcbf
   return (
     <>
       <MobileBottomMenu />
@@ -18,7 +26,11 @@ const Footer = () => {
             <div className="flex flex-wrap py-10">
               <div className="w-1/3">
                 <Image
+<<<<<<< HEAD
                   src={data?.footerLogo?.url || "/images/logo.svg"}
+=======
+                  src="/images/logo_white.svg"
+>>>>>>> 64025c27ecdae3117a98fcf2f0878e4931d0dcbf
                   width={163}
                   height={72}
                   alt="Picture of the author"

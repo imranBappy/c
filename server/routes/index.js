@@ -17,7 +17,10 @@ const routes = [
   { path: "/message", router: require("./messageRoute.js") },
   { path: "/order", router: require("./orderRoutes.js") },
   { path: "/payment", router: require("./paymentRoutes.js") },
+<<<<<<< HEAD
   { path: "/setting", router: require("./settingRoutes.js") },
+=======
+>>>>>>> 64025c27ecdae3117a98fcf2f0878e4931d0dcbf
 
   // { path: "/banner", router: require("./bannerRoutes.js"), },
   // { path: "/setting", router: require("./settingRoutes.js"), },
